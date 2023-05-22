@@ -11,6 +11,8 @@ public class Soru_test_1 {
         System.out.println(2+3>=5);
         System.out.println(2+4!=5);
 
+        System.out.println("github gitti şimdi kodlarla yapalım");
+
 
 
 
