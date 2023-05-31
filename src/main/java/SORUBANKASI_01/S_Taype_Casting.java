@@ -2,31 +2,26 @@ package SORUBANKASI_01;
 
 import java.util.Scanner;
 
-public class örnek_01 {
+public class S_Taype_Casting {
     public static void main(String[] args) {
 
-        long startTime = System.nanoTime(); // Başlangıç zamanını kaydet
+        /*
+    Numeric primitve data type larinin birbirine donusturulmesine "Type Casting " denir
+    Numeric (sayisal) Data typelar  byte  -  short   -   int  -   long    -   float   -  double-
+     */
+        //Note 1: Kucuk data typelarini buyuk data typelarina cevirmeyi java otomatik olarak yapar
+        //bu isleme "AutoWidening" (otomatik genisletme) denir.
 
-        Scanner scan=new Scanner(System.in);
-
-        System.out.println("hangi kahveyi istersiniz\n1.Türk kahvesi\n2.Filtre Kahve\n3.Espresso");
-
-        String hangiKahve = scan.nextLine();
-
-        hangiKahve = hangiKahve.toLowerCase().replaceAll("\\s", "") ;
-
-
-        System.out.println("süt eklememmizi istermisiniz.(evet veya hayır olarak cevaplayınız");
+        //Note 2: Buyuk data typelarini kucuk data typelarina cevirmek riskli bir istir, java bu riskli isi otomatik olarak yapmaz
+        // bu islemi kod yazanlardan bekler.
+        //Bu isleme "ExplicitNarrowing" (Aciktan Daraltma) denir
 
 
 
-        System.out.println("Süt eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız):   ");
-        String sut = scan.nextLine();
-
-        sut = sut.toLowerCase().replaceAll("\\s", "") ;
-
-
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("lütfen -128 ile 127 arasaın da bir sayı giriniz ");
+        Byte num = scanner.nextByte();
+        System.out.println(5 * num);
 
 
     }//main

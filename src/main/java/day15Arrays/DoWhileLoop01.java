@@ -1,4 +1,4 @@
-package day15;
+package day15Arrays;
 
 public class DoWhileLoop01 {
     public static void main(String[] args) {
